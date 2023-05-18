@@ -1,0 +1,73 @@
+.home-container {
+    display: flex;
+    width: 900px;
+
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    border: 15px solid rgb(151, 59, 6);
+    background-color: rgb(220, 174, 47);
+    flex-shrink: 3;
+    /* background-image: linear-gradient(rgba(171, 253, 250, 0.675),rgb(233, 252, 246)); */
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1),
+    10px 10px 10px rgba(0,0,0,0.2),
+    14px 14px 10px rgba(0,0,0,0.1),
+    20px 20px 14px rgba(0,0,0,0.1),
+    inset 2px 2px 3px   rgb(138, 108, 24);
+
+}
+
+/* ===================================================================== */
+.advertisementImg {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.companyname {
+    display: flex;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+
+    height: 100px;
+    font-size: 50px;
+
+    /* background-color: rgb(240, 245, 245); */
+    border-radius: 10px;
+}
+
+.companyname h1 {
+    text-shadow: 0 0 0.2em white;
+}
+
+.commitment {
+    /* font-family:Arial, Helvetica, sans-serif; */
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 30px;
+    /* font-family:Arial, Helvetica, sans-serif; */
+}
+
+/* ============================================================================= */
+@media (max-width:1055px)
+{
+    .home-container
+    {
+        width: 400px;
+        height: 250px;
+        border: 10px solid rgb(151, 59, 6);
+    }
+    .companyname
+    {
+        width: 150px;
+        height: 70px;
+        font-size: 25px;
+    }
+    .commitment
+    {
+        font-size: 22px;
+    }
+}

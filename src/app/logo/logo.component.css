@@ -1,0 +1,163 @@
+.container {
+    display: flex;
+    width: 100%;
+    height: 100px;
+   
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 3;
+    background-color: rgb(224, 248, 248);
+    border-radius: 10px;
+
+}
+
+
+
+.companyname {
+    display: flex;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    height: 100px;
+    
+    background-color: rgb(240, 245, 245);
+    border-radius: 10px;
+}
+
+.addressOfhefshine a {
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.addressOfhefshine a svg {
+    color: rgb(100, 33, 33);
+    animation-name: blink1;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-delay: 0ms;
+    animation-timing-function: linear;
+}
+
+@keyframes blink1 {
+    0% {
+        transform: scale(1.00);
+        color: rgb(250, 78, 78);
+    }
+
+    25% {
+        transform: scale(1.1);
+    }
+
+    50% {
+        transform: scale(1.2);
+       
+    }
+
+    75% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(0.9);
+    }
+
+}
+
+
+.enquirybtn button {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 170px;
+    height: 40px;
+   border-radius: 5px;
+    border: none;
+    color: white;
+  
+    background-image: linear-gradient(rgba(248, 171, 253, 0.675),rgb(250, 216, 252));
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1),
+    10px 10px 10px rgba(0,0,0,0.1),
+    14px 14px 10px rgba(0,0,0,0.1),
+    20px 20px 14px rgba(0,0,0,0.1),
+    inset 2px 2px 3px  white;
+}
+.enquirybtn button svg
+{
+    color: green;
+}
+.enquirybtn button svg {
+    color: rgb(13, 49, 8);
+    animation-name: blink2;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-delay: 0ms;
+    animation-timing-function: linear;
+}
+
+@keyframes blink2 {
+    0% {
+        transform: scale(1.00);
+        color: rgb(78, 250, 107);
+    }
+
+    25% {
+        transform: scale(1.1);
+    }
+
+    50% {
+        transform: scale(1.2);
+       
+    }
+
+    75% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(0.9);
+    }
+
+}
+.enquirybtn button a{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+
+.enquirybtn button:hover {
+    transform: scale(1.03);
+}
+
+@media (max-width:1055px) {
+    .container
+    {
+        height: 70px;
+        width: 100vw;
+    }
+    .container h1 
+    {
+        font-size: 25px;
+    }
+    .companyname 
+    {
+        width: 120px;
+        height: 70px;
+    }
+    .enquirybtn button
+    {
+        width: 110px;
+        height: 32px;
+    }
+    .enquirybtn button a,.addressOfhefshine a 
+    {
+        font-size: 12px;
+    }
+    
+    
+}
+/* =========================================================== */

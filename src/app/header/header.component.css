@@ -1,0 +1,51 @@
+.header {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    flex-flow: row wrap;
+ 
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(155, 10, 10), rgb(241, 20, 20), rgb(155, 10, 10));
+    height: 3rem;
+    border-radius: 5px;
+    /* background-color: rgb(155, 10, 10); */
+    flex-shrink: 3;
+}
+
+.mat-icon {
+
+    margin: 0px 15px;
+    color: rgb(243, 246, 246);
+    cursor: pointer;
+}
+
+.navbar a {
+    padding: 12px 40px;
+    text-decoration: none;
+    color: white;
+
+
+    border-left: 1px solid white;
+
+}
+
+.navbar a:hover {
+    cursor: pointer;
+    background-color: rgb(101, 35, 35);
+    border-radius: 10px;
+}
+
+@media (max-width: 1052px) {
+    .navbar a {
+        padding: 12px 15px;
+        font-size: 12px;
+    }
+    .header
+    {
+        height: 2.5rem;
+        width: 100vw;
+    }
+
+}
+
+/* ==================================================================================== */
